@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="light">
     <section class="menu">
       <div class="title-menu"><img src="resources/Moon_fill.svg"> Alarado</div>
       <div class="list-items-menu">
@@ -27,7 +27,14 @@
         <div class="item-menu">Resource</div>
         <div class="item-menu">Contact</div>
       </div>
-      <div class="toggle-mode"><input type="radio"></div>
+      <div class="toggle-mode">
+        <input type="checkbox" id="toggle" class="toggle-button">
+        <label class="toggle" for="toggle">
+          <img class="bx bx-moon" src="resources/Moon_fill_light.svg">
+          <img class="bx bxs-sun" src="resources/Sun_fill.svg">
+          <span class="ball"></span>
+        </label>
+      </div>
     </section>
     <section class="info">
       <div class="data">
@@ -39,7 +46,7 @@
           <div>No software to install</div>
         </div>
       </div>
-      <div class="image"><img src="resources/hero-image-simple-homepage@2x.png" alt=""></div>
+      <div class="image"><img src="resources/hero-image-simple-homepage.png" alt=""></div>
     </section>
     <div class="author-info">
       Coded by <a href="https://github.com/jose-angell/Simple-Homepage">jose-angell</a> | Challenge by
@@ -47,5 +54,6 @@
         >devChallenges.io</a
       >.
     </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
