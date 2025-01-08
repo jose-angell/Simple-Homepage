@@ -1,13 +1,16 @@
+:root {
+    --color_primario: #F2F9FE;
+}
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-
 font-family: 'Poppins', serif;
 }
 body {
     height: 100vh;
-    transition: 2s;
+    transition: 1s;
 }
 
 .toggle {
@@ -33,7 +36,7 @@ body {
     height: 17px;
     margin-top: .18rem;
     border-radius:50%;
-    transition: 1s ease-out;
+    transition: .5s ease-out;
 }
 input {
     display: none;
@@ -106,14 +109,14 @@ text-decoration: none;
 
 .menu {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    
+    margin-top: -.5rem;
 }
-.title-menu {
+.logo, .logo span {
     font-size: 1.4rem;
     font-weight: 700;
     color: #223344;
@@ -121,12 +124,13 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
 }
+ol, ul {
+    list-style: none;
+}
 .icon-title {
-    margin-top: -1.5rem;
+    margin-top: -3rem;
 }
-.text-title {
-    margin-top: -.5rem;
-}
+
 .list-items-menu {
     display: flex;
     gap: 2.5rem;
@@ -134,6 +138,16 @@ text-decoration: none;
     font-weight: 600;
     color:#223344;
 }
+.item-menu {
+    text-decoration: none;
+    color: #223344;
+}
+li a.selected, li a:hover{
+    color: #2A4DD0;
+    border-bottom: 3px solid #2A4DD0;
+    padding-bottom: 2px;
+}
+
 .info {
     width: auto;
     height: auto;
@@ -143,6 +157,16 @@ text-decoration: none;
     align-items: self-start;
     
 }
+
+nav .menu_hamburguesa {
+    display: none;
+}
+
+nav .label_hamburguesa{
+    display: none;
+   
+}
+
 .data {
     width: 50%;
     display: flex;
@@ -153,12 +177,13 @@ text-decoration: none;
 .first-text {
     font-size: .875rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 .main-text {
     font-size: 3.9rem;
     font-weight: 700;
     color: #223344;
-    width: 61%;
+    width: 70%;
     margin-bottom: 1rem;
 }
 .second-text{
@@ -194,7 +219,11 @@ text-decoration: none;
     display: flex;
     gap: .5rem;
 }
-
+.button-link a {
+    text-decoration: none;
+    border-bottom: 3px solid #2A4DD0;
+    padding-bottom: 2px;
+}
 
 .image {
     width: 50%;
@@ -205,9 +234,98 @@ text-decoration: none;
 }
 
 
-.dark .title-menu,
+.dark .logo span,
 .dark .list-items-menu,
 .dark .data,
-.dark .main-text{
+.dark .main-text,
+.dark .item-menu{
     color: #FFFFFF;
+}
+.dark .button-link a,
+.dark .selected, .dark li a:hover {
+    color: #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+@media (max-width: 1150px){
+    .main-text{
+        width: 90%;
+    }
+  
+}
+
+@media (max-width: 770px){
+    .info {
+        padding: 0 1rem ;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .data {
+        width: 100%;
+    }
+    .main-text{
+        width: 100%;
+        font-size: 2.89rem;
+    }
+    .image {
+        margin-bottom: 2rem;
+    }
+    .menu {
+        padding: 0 0 ;
+        flex-direction: row-reverse;
+    }
+    .label_hamburguesa{
+        display: block;
+        cursor: pointer;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #FFFFFF;
+        top: 4rem;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .dark ul {
+        background: #223344;
+    }
+    nav ul li {
+        display: block;
+        margin: 2rem 0;
+        line-height: 1rem;
+
+    }
+    .list-items-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 9rem;
+    }
+    nav ul li a{
+        font-size: 1.8rem;
+        
+    }
+    .toggle-mode {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 38rem;
+        left: 100%;
+        transition: all .5s;
+
+    }
+    #menu_hamburguesa:checked ~ ul{
+        right:-40%;
+    }
+    #menu_hamburguesa:checked ~ .toggle-mode{
+        left: 67%;
+    }
 }
