@@ -19,24 +19,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body class="light">
-    <nav class="menu">
-      <label class="label_hamburguesa" for="menu_hamburguesa">
-        <img src="resources/hamburger-button.svg" alt="hamburger-button">
-      </label>
-      <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
-      <div class="logo">
-        <svg class="icon-title" width="65" height="75" xmlns="http://www.w3.org/2000/svg">
+    <nav>     
+      <input class="menu-checkbox" type="checkbox" name="" id="menu_checkbox">
+      
+      <div class="menu-logo">
+        <svg class="icon-title" width="50" height="45" xmlns="http://www.w3.org/2000/svg">
           <g style="z-index: 1; position: relative;"> 
-            <rect x="55" y="5" width="24" height="24" fill="#4CA154" rx="5" ry="5" transform="rotate(45)" />
+            <rect x="30" y="-19" width="24" height="24" fill="#4CA154" rx="5" ry="5" transform="rotate(45)" />
           </g>
           <g  style="z-index: 2; position: relative;">
-            <rect x="45" y="15" width="24" height="24" fill="#2A4DD0" rx="5" ry="5" transform="rotate(45)" />
+            <rect x="21" y="-10" width="24" height="24" fill="#2A4DD0" rx="5" ry="5" transform="rotate(45)" />
           </g>
             Sorry, your browser does not support inline SVG.
         </svg>
-        <span class="text-title">Alarado</span></div>
-      </div>     
+        <span class="menu-text-title">Alarado</span></div>
+      </div>  
+      
+        <label class="menu-toggle" for="menu_checkbox">
+          <img class="menu" src="resources/hamburger-button.svg" alt="nemu-icon">
+          <img class="close" src="resources/close-button.svg" alt="close-icon">
+        </label>
+      
       <ul  class="list-items-menu">
+        
         <li>
           <a href="#" class="item-menu selected">About us</a>
         </li>
@@ -49,15 +54,16 @@
         <li>
           <a href="#" class="item-menu">Contact</a>
         </li>
+        <li class="toggle-mode">
+          <input type="checkbox" id="toggle" class="toggle-button">
+          <label class="toggle" for="toggle">
+            <img class="bx bx-moon" src="resources/Moon_fill_light.svg">
+            <img class="bx bxs-sun" src="resources/Sun_fill.svg">
+            <span class="ball"></span>
+          </label>
+        </li>   
       </ul>   
-      <div class="toggle-mode">
-        <input type="checkbox" id="toggle" class="toggle-button">
-        <label class="toggle" for="toggle">
-          <img class="bx bx-moon" src="resources/Moon_fill_light.svg">
-          <img class="bx bxs-sun" src="resources/Sun_fill.svg">
-          <span class="ball"></span>
-        </label>
-      </div>    
+       
     </nav>
     <section class="info">
       <div class="data">
