@@ -329,3 +329,36 @@ li a.selected, li a:hover{
     }
     
 }
+
+@media only screen and (min-width: 890px){
+    ul {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        background: transparent;
+        opacity: 100%;
+        padding-left:7%;
+    }
+    .menu-logo {
+        margin-left: 4rem;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .toggle-mode {
+        position:absolute;
+        right: 5rem;
+    }
+    ul li a {
+        font-size: 1rem;
+    }
+    .dark ul {
+        background: transparent;
+    }
+}
