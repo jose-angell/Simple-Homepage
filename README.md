@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://jose-angell.github.io/Simple-Homepage/">
       Demo
     </a>
     <span> | </span>
@@ -37,8 +37,8 @@
 <!-- OVERVIEW -->
 
 ## Overview
-
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+This challenge is good practice for building a simple homepage and practicing creating different style modes (dark and light).
+![screenshot](screenshot.png)
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
@@ -48,7 +48,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 -->
 
 ### What I learned
-
+This project is a good opportunity to create dark and light mode effects without using libraries, it also allowed me to explore more in the creation of a responsive menu using only CSS and HTML.
 <!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
 
 ### Useful resources
@@ -57,7 +57,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 -->
-
+[menu responsive](https://platzi.com/blog/7-pasos-para-crear-un-menu-responsivo-con-css/) - this helped me for how to structur and anime a menu responsive
 ### Built with
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
